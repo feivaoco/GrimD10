@@ -1034,11 +1034,104 @@
         <categoryLink targetId="5915-89b1-d894-66d6" id="c585-4207-ca94-bc5f" primary="false" name="Template Weapon"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Noxious Blightbringer" hidden="false" id="bb25-8cd3-cd9d-67b1">
+      <costs>
+        <cost name="pts" typeId="6aa7-e84e-fbb5-e70c" value="65"/>
+      </costs>
+      <profiles>
+        <profile name="Noxious Blightbringer" typeId="f17c-c21c-6636-2f33" typeName="Model" hidden="false" id="5664-dcaa-0adf-1a2e">
+          <characteristics>
+            <characteristic name="M" typeId="f2ad-cf28-b385-c52c">5”</characteristic>
+            <characteristic name="WS" typeId="90d1-d4ce-477b-5be5">5</characteristic>
+            <characteristic name="BS" typeId="2630-750e-bbb9-8b19">5+</characteristic>
+            <characteristic name="S" typeId="480f-b3d8-1e7b-7f2a">4</characteristic>
+            <characteristic name="T" typeId="2b08-f6c5-2e9b-ff83">5</characteristic>
+            <characteristic name="W" typeId="b89c-e03e-1fd9-a389">4</characteristic>
+            <characteristic name="A" typeId="a174-fde0-2b73-4201">3</characteristic>
+            <characteristic name="Ld" typeId="eb57-30ae-7327-90a4">4+</characteristic>
+            <characteristic name="Sv" typeId="ae5e-affd-e329-09d3">4+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Noxious Blightbringer" typeId="9c18-b709-d7ed-8583" typeName="Type" hidden="false" id="e213-e5a1-d410-5bac">
+          <characteristics>
+            <characteristic name="Unit" typeId="9cd3-7e0c-cabf-da44">Infantry</characteristic>
+            <characteristic name="Size" typeId="e196-e291-1dec-e4bf">1</characteristic>
+            <characteristic name="Height" typeId="3b23-9730-50fc-2a03">2</characteristic>
+            <characteristic name="Base" typeId="527e-9115-0578-cd4d">40mm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Disgustingly Resilient" id="d18c-6f75-893f-5f7f" hidden="false" type="profile" targetId="52b9-6c62-d32f-df2c"/>
+        <infoLink name="Plague aura" id="d18b-ba34-4612-b964" hidden="false" type="profile" targetId="4f83-33f2-ddbb-65a1"/>
+        <infoLink name="Sickening Vitality" id="f737-d10c-1d90-1e75" hidden="false" type="profile" targetId="2091-644b-9084-7e4a"/>
+        <infoLink name="Tocsin of Misery" id="42cc-9830-df64-2b96" hidden="false" type="profile" targetId="8fea-3b04-0abc-9552"/>
+        <infoLink name="Empyric Malaise" id="f6a2-fbd7-4d59-e28d" hidden="false" type="profile" targetId="331b-bebf-7af7-962d"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Grenades" id="b56d-fadc-8ba1-0fa0" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Blight grenade" hidden="false" id="e653-0496-2c8b-c91b" type="selectionEntry" targetId="38eb-c644-7fe2-8e4f" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb4b-07b2-d6e0-0e4c" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd44-8e3f-49ee-96a4" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Krak grenades" hidden="false" id="1dfe-db69-c2b6-56e2" type="selectionEntry" targetId="4cf2-a40e-0762-0390">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b7e-683f-f750-1641" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="730d-dfc9-b355-c3e0" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Bolt pistol" id="8d52-e8a1-9bc2-9e1a" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="0007-d4ec-4dd8-8d59" type="selectionEntry" targetId="679c-65dd-38ac-0826"/>
+            <entryLink import="true" name="Plasma pistol" hidden="false" id="6751-6591-f6ca-1281" type="selectionEntry" targetId="227c-2dbb-1b1f-5c0f">
+              <costs>
+                <cost name="pts" typeId="6aa7-e84e-fbb5-e70c" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a70-b27f-b7f6-3260" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4637-a0c6-34c5-9c39" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Cursed plague bell" hidden="false" id="081f-7290-9edc-cac2" type="selectionEntry" targetId="f798-585a-8cdb-599b" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5373-b3b2-8ea5-390f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fde-3d5f-9529-a2ac" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="fd83-733a-738f-6f2d" id="4474-95c9-7e7d-7d12" primary="true" name="ELITE"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cursed plague bell" hidden="false" id="f798-585a-8cdb-599b">
+      <profiles>
+        <profile name="Cursed plague bell" typeId="d764-9a45-a711-b895" typeName="Melee Weapon" hidden="false" id="5280-d997-5482-1180">
+          <characteristics>
+            <characteristic name="Type" typeId="f741-7865-28fd-e397">CCW</characteristic>
+            <characteristic name="Range" typeId="ef1d-b3a2-0874-7be5"/>
+            <characteristic name="S" typeId="c46c-6910-5b04-c75b">User</characteristic>
+            <characteristic name="AP" typeId="bc95-c12b-e05b-93a3"/>
+            <characteristic name="D" typeId="879b-5cdf-300d-a534">2</characteristic>
+            <characteristic name="Special Rules" typeId="e29f-5f92-36b1-0518">Plague</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Death Guard Lord" hidden="false" id="2281-d0a7-ed9f-5256" type="selectionEntry" targetId="56de-2f31-1595-32d2"/>
-    <entryLink import="true" name="Tallyman" hidden="false" id="f641-b448-2ae3-b3a9" type="selectionEntry" targetId="1b89-6745-709f-f3d6"/>
-    <entryLink import="true" name="Foul Blightspawn" hidden="false" id="b471-073f-a661-e455" type="selectionEntry" targetId="9274-6c08-192d-841a"/>
+    <entryLink import="true" name="Death Guard Lord" hidden="false" id="2281-d0a7-ed9f-5256" type="selectionEntry" targetId="56de-2f31-1595-32d2" sortIndex="1"/>
+    <entryLink import="true" name="Tallyman" hidden="false" id="f641-b448-2ae3-b3a9" type="selectionEntry" targetId="1b89-6745-709f-f3d6" sortIndex="1"/>
+    <entryLink import="true" name="Foul Blightspawn" hidden="false" id="b471-073f-a661-e455" type="selectionEntry" targetId="9274-6c08-192d-841a" sortIndex="2"/>
+    <entryLink import="true" name="Noxious Blightbringer" hidden="false" id="0691-cdbb-b3ef-29e7" type="selectionEntry" targetId="bb25-8cd3-cd9d-67b1" sortIndex="3"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Disgustingly Resilient" typeId="52eb-5f98-0a80-002c" typeName="Ability" hidden="false" id="52b9-6c62-d32f-df2c">
@@ -1101,6 +1194,21 @@ This aura is allowed to stack</characteristic>
     <profile name="Revolting Stench" typeId="52eb-5f98-0a80-002c" typeName="Ability" hidden="false" id="3fdc-aab2-43c0-d82a">
       <characteristics>
         <characteristic name="Description" typeId="f0f1-262f-7fa5-e653">^^**[Aura]**^^ Enemy units declaring a charge within 12” need to make a Morale test, if failed that units charge fails automatically.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sickening Vitality" typeId="52eb-5f98-0a80-002c" typeName="Ability" hidden="false" id="2091-644b-9084-7e4a">
+      <characteristics>
+        <characteristic name="Description" typeId="f0f1-262f-7fa5-e653">^^**[Aura]**^^ Friendly infantry units within 12” add a +1 modifier to its Movement skill.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Tocsin of Misery" typeId="52eb-5f98-0a80-002c" typeName="Ability" hidden="false" id="8fea-3b04-0abc-9552">
+      <characteristics>
+        <characteristic name="Description" typeId="f0f1-262f-7fa5-e653">^^**[Aura]**^^ Enemy units within 12” suffer a -1 penalty to its morale tests.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Empyric Malaise" typeId="52eb-5f98-0a80-002c" typeName="Ability" hidden="false" id="331b-bebf-7af7-962d">
+      <characteristics>
+        <characteristic name="Description" typeId="f0f1-262f-7fa5-e653">^^**[Aura]**^^ Enemy psyker units within 12” suffer a +1 penalty to the surge value of its psychic powers.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

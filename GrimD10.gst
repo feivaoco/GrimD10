@@ -93,6 +93,38 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <readme/>
+      <rules>
+        <rule name="Combat Patrol" id="0b76-8644-0125-082a" hidden="false">
+          <description>^^**ARMY LIMITATIONS**^^
+
+
+^^**Each player will need a patrol that conforms to the rules below:**^^
+^^**•**^^ Armies are no more than 500 points.
+^^**•**^^ You must use the Combat Patrol detachment (see below).
+^^**•**^^ Unique special characters are not allowed.
+^^**•**^^ Lord of War units are not allowed.
+^^**•**^^ No models with more than 12 wounds.
+^^**•**^^ No ordnance type weapons.
+^^**•**^^ Any single model may not cost more than 180 total points.
+^^**•**^^ You may spend remaining points from anywhere in the codex.
+^^**•**^^ Units must be fielded with the fewest models possible it can have. Example: a unit of tactical marines can have a total of 5-10 models, so it can only be fielded with 5 models. Units that can have models &quot;added&quot; to it, like an Ork Nob or the Tau gun drones are still allowed to be added to a unit.
+^^**•**^^ Take at least 3 models in a unit that have 0 as minimun
+
+^^**MISSIONS**^^
+Play any mission you want, when playing with objectives, no more than 3 objectives are used in a Combat patrol game.
+Missions are played on a smaller table, 30&quot; by 48&quot;.
+
+
+^^**COMBAT PATROL DETACHMENT**^^
+^^**•**^^ HQ 0-1
+^^**•**^^ TROOPS 1-4
+^^**•**^^ ELITES 0-2
+^^**•**^^ FAST ATTACK 0-2
+^^**•**^^ HEAVY SUPPORT 0-2
+^^**•**^^ FLYERS 0-2</description>
+        </rule>
+      </rules>
     </forceEntry>
   </forceEntries>
   <comment>SE VA USAR LA VERSION 2nd 7-7-26</comment>

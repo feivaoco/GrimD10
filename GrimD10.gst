@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-194e-147b-30e0-deb5" name="GrimD10" battleScribeVersion="2.03" revision="5" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-194e-147b-30e0-deb5" name="GrimD10" battleScribeVersion="2.03" revision="8" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="ELITE" id="fd83-733a-738f-6f2d" hidden="false"/>
     <categoryEntry name="FAST ATTACK" id="48dd-53b7-ec44-106f" hidden="false"/>
@@ -52,10 +52,20 @@
     <categoryEntry name="Psychic Power" id="f86b-635a-316a-77ad" hidden="false"/>
     <categoryEntry name="Ranged Weapon" id="c75a-3fb1-8190-1149" hidden="false"/>
     <categoryEntry name="Melee Weapon" id="4e30-57f3-6981-437f" hidden="false"/>
+    <categoryEntry name="GrimD10Rules" id="77fd-3f4f-8956-644d" hidden="false"/>
+    <categoryEntry name="Character" id="d6b9-4816-b50a-3bb5" hidden="false"/>
+    <categoryEntry name="Chaos space marine" id="c671-0620-a875-d494" hidden="false"/>
+    <categoryEntry name="Chaos" id="2714-aabf-be51-85d0" hidden="false"/>
+    <categoryEntry name="Nurgle" id="c6f8-5fb3-9f0c-a77e" hidden="false"/>
+    <categoryEntry name="Death guard" id="cb97-fac1-7b63-ef84" hidden="false"/>
+    <categoryEntry name="Psyker" id="d8c5-eda3-92f2-15b0" hidden="false"/>
+    <categoryEntry name="Daemon" id="b1ec-2c23-1b6a-e9d2" hidden="false"/>
+    <categoryEntry name="Walker" id="9fc2-9b35-3b73-c8f3" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Combat Patrol" id="8ebe-a36a-960c-732f" hidden="false">
       <categoryLinks>
+        <categoryLink name="GrimD10Rules" hidden="false" id="aa3f-e4cc-098c-cbf5" targetId="77fd-3f4f-8956-644d"/>
         <categoryLink name="HQ" hidden="false" id="5bfd-cd5b-a7e5-6dc8" targetId="6530-d88d-6192-ea30">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="73f7-59a8-d9de-37e5"/>
@@ -93,43 +103,11 @@
           </constraints>
         </categoryLink>
       </categoryLinks>
-      <readme/>
-      <rules>
-        <rule name="Combat Patrol" id="0b76-8644-0125-082a" hidden="false">
-          <description>^^**ARMY LIMITATIONS**^^
-
-
-^^**Each player will need a patrol that conforms to the rules below:**^^
-^^**•**^^ Armies are no more than 500 points.
-^^**•**^^ You must use the Combat Patrol detachment (see below).
-^^**•**^^ Unique special characters are not allowed.
-^^**•**^^ Lord of War units are not allowed.
-^^**•**^^ No models with more than 12 wounds.
-^^**•**^^ No ordnance type weapons.
-^^**•**^^ Any single model may not cost more than 180 total points.
-^^**•**^^ You may spend remaining points from anywhere in the codex.
-^^**•**^^ Units must be fielded with the fewest models possible it can have. Example: a unit of tactical marines can have a total of 5-10 models, so it can only be fielded with 5 models. Units that can have models &quot;added&quot; to it, like an Ork Nob or the Tau gun drones are still allowed to be added to a unit.
-^^**•**^^ Take at least 3 models in a unit that have 0 as minimun
-
-^^**MISSIONS**^^
-Play any mission you want, when playing with objectives, no more than 3 objectives are used in a Combat patrol game.
-Missions are played on a smaller table, 30&quot; by 48&quot;.
-
-
-^^**COMBAT PATROL DETACHMENT**^^
-^^**•**^^ HQ 0-1
-^^**•**^^ TROOPS 1-4
-^^**•**^^ ELITES 0-2
-^^**•**^^ FAST ATTACK 0-2
-^^**•**^^ HEAVY SUPPORT 0-2
-^^**•**^^ FLYERS 0-2</description>
-        </rule>
-      </rules>
     </forceEntry>
   </forceEntries>
   <comment>SE VA USAR LA VERSION 2nd 7-7-26</comment>
   <profileTypes>
-    <profileType name="Weapon" id="bf64-a724-59e3-0427" hidden="false" kind="weapon">
+    <profileType name="Weapon" id="bf64-a724-59e3-0427" hidden="false" kind="weapon" sortIndex="3">
       <characteristicTypes>
         <characteristicType name="Type" id="22f4-e858-3160-fec6" kind="annotation" defaultValue="-"/>
         <characteristicType name="Range" id="22f5-c121-2c24-d303" kind="annotation" defaultValue="-"/>
@@ -139,7 +117,7 @@ Missions are played on a smaller table, 30&quot; by 48&quot;.
         <characteristicType name="Special Rules" id="e7b4-5a21-bbf5-86eb" kind="annotation"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Model" id="f17c-c21c-6636-2f33" hidden="false" kind="model">
+    <profileType name="Model" id="f17c-c21c-6636-2f33" hidden="false" kind="model" sortIndex="2">
       <characteristicTypes>
         <characteristicType name="M" id="f2ad-cf28-b385-c52c" kind="annotation"/>
         <characteristicType name="WS" id="90d1-d4ce-477b-5be5" kind="annotation"/>
@@ -152,12 +130,12 @@ Missions are played on a smaller table, 30&quot; by 48&quot;.
         <characteristicType name="Sv" id="ae5e-affd-e329-09d3" kind="annotation"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Rule" id="8c2e-a4d3-bbd5-5931" hidden="false" kind="rule">
+    <profileType name="Rule" id="8c2e-a4d3-bbd5-5931" hidden="false" kind="rule" sortIndex="10">
       <characteristicTypes>
         <characteristicType name="Description" id="8d02-580d-42e1-8dfb" kind="longText"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Type" id="9c18-b709-d7ed-8583" hidden="false" kind="tag">
+    <profileType name="Type" id="9c18-b709-d7ed-8583" hidden="false" kind="tag" sortIndex="1">
       <characteristicTypes>
         <characteristicType name="Unit" id="9cd3-7e0c-cabf-da44" kind="annotation" defaultValue="Infantry"/>
         <characteristicType name="Size" id="e196-e291-1dec-e4bf" kind="annotation" defaultValue="1"/>
@@ -165,7 +143,7 @@ Missions are played on a smaller table, 30&quot; by 48&quot;.
         <characteristicType name="Base" id="527e-9115-0578-cd4d" kind="annotation" defaultValue="32mm"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Discipline" id="c3a3-f651-e6b6-5382" hidden="false" kind="ability">
+    <profileType name="Discipline" id="c3a3-f651-e6b6-5382" hidden="false" kind="ability" sortIndex="4">
       <characteristicTypes>
         <characteristicType name="Surge" id="20aa-b15f-e378-e075" kind="annotation"/>
         <characteristicType name="Target" id="2e9b-b00d-6a93-c070" kind="longText"/>
@@ -175,17 +153,17 @@ Missions are played on a smaller table, 30&quot; by 48&quot;.
         <characteristicType name="Perils of the Warp" id="cc25-1cd5-b9b4-7ad1" kind="longText" defaultValue="Rolling two 1s or two 10s is a Perils of the Warp"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Gear" id="50ab-0b17-e88f-4ab9" hidden="false">
+    <profileType name="Gear" id="50ab-0b17-e88f-4ab9" hidden="false" sortIndex="11">
       <characteristicTypes>
         <characteristicType name="Description" id="0dfb-289c-ce0b-ead7" kind="longText"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Ability" id="52eb-5f98-0a80-002c" hidden="false" kind="ability">
+    <profileType name="Ability" id="52eb-5f98-0a80-002c" hidden="false" kind="ability" sortIndex="9">
       <characteristicTypes>
         <characteristicType name="Description" id="f0f1-262f-7fa5-e653" kind="longText"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Melee Weapon" id="d764-9a45-a711-b895" hidden="false" kind="weapon">
+    <profileType name="Melee Weapon" id="d764-9a45-a711-b895" hidden="false" kind="weapon" sortIndex="8">
       <characteristicTypes>
         <characteristicType name="Type" id="f741-7865-28fd-e397" kind="annotation" defaultValue="-"/>
         <characteristicType name="Range" id="ef1d-b3a2-0874-7be5" kind="annotation" defaultValue="-"/>
@@ -195,7 +173,7 @@ Missions are played on a smaller table, 30&quot; by 48&quot;.
         <characteristicType name="Special Rules" id="e29f-5f92-36b1-0518" kind="annotation"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Ranged Weapon" id="5337-36bb-abf7-9785" hidden="false" kind="weapon">
+    <profileType name="Ranged Weapon" id="5337-36bb-abf7-9785" hidden="false" kind="weapon" sortIndex="7">
       <characteristicTypes>
         <characteristicType name="Type" id="7ae3-ed6b-bfad-3d0a" kind="annotation" defaultValue="-"/>
         <characteristicType name="Range" id="57b2-dd18-1259-edc6" kind="annotation" defaultValue="-"/>
@@ -205,16 +183,21 @@ Missions are played on a smaller table, 30&quot; by 48&quot;.
         <characteristicType name="Special Rules" id="0f9a-625d-21c5-f9b3" kind="annotation"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Wargear" id="9a4c-9cfd-1cac-e423" hidden="false" kind="rule" sortIndex="5">
+      <characteristicTypes>
+        <characteristicType name="Description" id="3ead-b5a1-be56-cfe1" kind="longText"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Special Rule" id="746a-4338-5ebe-6106" hidden="false" kind="rule" sortIndex="6">
+      <characteristicTypes>
+        <characteristicType name="Description" id="e31c-dba6-82c9-32db" kind="longText"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <costTypes>
     <costType name="pts" id="6aa7-e84e-fbb5-e70c" defaultCostLimit="500"/>
   </costTypes>
   <sharedRules>
-    <rule name="Feel no Pain" id="7021-c225-c1f9-3ea6" hidden="false">
-      <description>For every point of damage the model with this special rule suffers, it can make a special Feel No Pain roll. Roll a D10 each time a loss of a wound is suffered, if the roll is equal or higher than the number behind the Feel No Pain, then the damage is negated.
-
-Example: Feel No Pain (8+), means rolling a 8, 9 or 10 is a success and the model does not lose a wound.</description>
-    </rule>
     <rule name="Stationary" id="b4e5-62c4-8ccc-b75c" hidden="false">
       <description>A unit is considered Stationary if no model in the unit moves more than half it&apos;s Movement characteristic.</description>
     </rule>
@@ -347,8 +330,8 @@ A model in the unit may only shoot this way if one or more of the following appl
 Ranged weapons with the Blast special rule cannot be shot into combat.</description>
     </rule>
     <rule name="Command" id="3e29-f2a9-3410-2efe" hidden="false">
-      <description>When a unit with this special rule activates, it can order another unit within 6&quot; (or in reserves, if both units are in reserves) to activate as part of a shared activation. Both units are treated as one and must be within 2&quot; of each other when entering the battlefield from reserves.
-If the other unit has the Command special rule, it cannot use it during this shared activation.</description>
+      <description>When a unit with this special rule activates, it can order another unit within 6&quot; (or in reserves, if both units are in reserves) to activate as part of a shared activation. Both units are treated as one and must be within 2&quot; of each other when entering the battlefield from reserves.
+If the other unit has the Command special rule, it cannot use it during this shared activation.</description>
     </rule>
     <rule name="Aura" id="e7e6-0b1a-3f32-331c" hidden="false">
       <description>Some units possess Aura abilities. An Aura represents a constant area of effect that influences nearby units.
@@ -452,6 +435,7 @@ Psykers suffer a +1 penalty to the surge of it&apos;s psychic powers if it has a
 
 
 A Broken Morale token can be removed from a unit at the end of it&apos;s activation (from an action not reaction) in the advancephase by making a Morale Test succesfully or to be removed from special abilities.</description>
+      <alias>Broken morale token</alias>
     </rule>
     <rule name="Morale Test" id="0050-687c-588a-d60a" hidden="false">
       <description>Morale Tests are a specific kind of Leadership test.
@@ -516,8 +500,7 @@ Where this is the case, there will be a separate line in the weapon’s profile
     <rule name="Skyfire" id="7037-c1b7-2b60-9b2e" hidden="false">
       <description>A model with this special rule, or that is firing a weapon with this special rule, uses it&apos;s normal Ballistic Skill when shooting at Flyers, Flying Monstrous Creatures, and Skimmers.</description>
     </rule>
-    <rule name="Invulnerable saves" id="81e4-c206-eecf-e004" hidden="false" noindex="true">
-      <alias>Invulnerable save</alias>
+    <rule name="Invulnerable save" id="81e4-c206-eecf-e004" hidden="false" noindex="true">
       <description>Invulnerable saves are different to armour saves because they may always be taken whenever the model suffers a wound – the Armour Piercing value of attacking weapons has no effect. Even if a wound normally ignores all armour saves, an invulnerable saving throw may still be taken.</description>
     </rule>
     <rule name="Combi Weapon" id="02e8-d789-3a6b-592b" hidden="false" noindex="true">
@@ -526,11 +509,12 @@ Where this is the case, there will be a separate line in the weapon’s profile
     <rule name="Graviton" id="9170-ca92-3662-cf73" hidden="false">
       <description>The roll needed To Wound when firing a grav-weapon is always equal to the armour save of the target, to a minimum of 9+</description>
     </rule>
-    <rule name="Attack (+" id="1a70-5a75-743e-e0e9" hidden="false">
+    <rule name="Attack" id="1a70-5a75-743e-e0e9" hidden="false">
       <description>A close combat weapon with this special rule gives the wielder that many bonus attacks. Those attacks can only be used with that weapon.</description>
     </rule>
     <rule name="Deepstrike " id="9661-72e1-cca4-0626" hidden="false">
-      <description>When arriving from reserves, this unit doesn&apos;t have to be deployed within 6” of a table edge. Place it anywhere where it could stand but still following the other rules for arriving from reserves (9” or 6” away from enemy units)</description>
+      <description>When arriving from reserves, this unit doesnt have to be deployed within 6” of a table edge. Place it anywhere where it could stand but still following the other rules for arriving from reserves (9” or 6” away from enemy units).</description>
+      <alias>Deep strike</alias>
     </rule>
     <rule name="Shrouded" id="6bc1-0470-575c-ece2" hidden="false">
       <description>Units with this ability cannot be the target of ranged attacks when outside of 12”. Units with this ability are ignored for the purpose of the protection rule unless it can be targeted</description>
@@ -554,33 +538,149 @@ true:
       <description>If a model is attacking with a weapon that has this rule, it automatically wounds on a fixed number (generally shown in brackets). In addition, if the Strength of the weapon is equal to or greater than the Toughness of the target, the wielder may re-roll failed To Wound rolls.
 This special rule has no effect against vehicles.</description>
     </rule>
+    <rule name="Inspire" id="5966-b7d8-adcf-b73b" hidden="false">
+      <description>^^**[Aura]**^^ Other friendly units within 6” of a unit with this special rule may add +1 to a single die result when making morale tests.</description>
+    </rule>
+    <rule name="Feel no pain" id="acf9-95a4-812d-7a29" hidden="false">
+      <description>For every point of damage the model with this special rule suffers, it can make a special Feel No Pain roll. Roll a D10 each time a loss of a wound is suffered, if the roll is equal or higher than the number behind the Feel No Pain, then the damage is negated. 
+Example: Feel No Pain (8+), means rolling a 8, 9 or 10 is a success and the model does not lose a wound.</description>
+    </rule>
+    <rule name="Fleshbane" id="df72-8552-e3c3-59d9" hidden="false">
+      <description>When a model targets a infantry or monster with a weapon that has this rule, it adds +2 to it&apos;s Strength (S) against that target (to a maximum Strength of 15).</description>
+    </rule>
+    <rule name="Rending" id="ff8e-6d1a-fe71-0ca1" hidden="false">
+      <description>If a model is attacking with a weapon that has the Rending special rule, there is a chance it&apos;s attacks will strike a critical blow. For each To Wound roll of a #+, the target suffers a Wound, regardless of it&apos;s Toughness. These Wounds are resolved at extra -3 AP.</description>
+    </rule>
+    <rule name="Night fighting" id="cd08-3d6f-2a07-3362" hidden="false">
+      <description>Roll 2D6 and multiply the result by 3, then measure the distance between the two units (remember that distances to/from vehicles are measured to/from their hull, and not their guns).
+
+
+If the distance between the firing unit and their target is higher than the total rolled, the unit cannot fire at all in this Shooting phase, as they search the dark for a target that never appears.</description>
+    </rule>
+    <rule name="Sniper" id="a156-218b-89a9-18bc" hidden="false">
+      <description>^^**•**^^ When shooting at an infantry unit with a sniper weapon it automatically wounds the target.
+^^**•**^^ Weapons with this rule may ignore the Protection rule when targeting a unit.
+^^**•**^^ The attacking unit may allocate what model in the unit must make the saving throws against these weapon attacks (instead of the defending unit)</description>
+    </rule>
+    <rule name="New Rule" id="29f3-2fd0-2fd1-fbf7" hidden="false"/>
+    <rule name="Instant death" id="2d5a-feb2-684e-6579" hidden="false">
+      <description>A model that takes 1 or more points of damage from this weapons attacks is instantly slain on a save roll result of 1 (always roll the save roll even if the target doesnt have one). Save results of 1 against these attacks cannot be re-rolled.
+Only the unit types mentioned with this rule are affected by these weapons attacks, if there are no mentioned unit types then all are affected.</description>
+    </rule>
+    <rule name="Psychic explosion" id="9d50-3855-d6b3-7ed1" hidden="false">
+      <description>When a caster dies because of a perils, it will explode in psychic energy and deal 1d3 lethal wounds around all other units surrounding it within 6”</description>
+    </rule>
+    <rule name="Cover" id="a371-5e59-71a1-d396" hidden="false" noindex="true">
+      <alias>Light cover</alias>
+      <alias>Medium cover</alias>
+      <alias>Heavy cover</alias>
+      <description>There are three types of cover to give a terrain piece:
+
+^^**•**^^ Light Cover: It gives the unit a 8+ cover save. 
+Given by forests, barricades and rubble.
+
+^^**•**^^ Medium Cover: It gives the unit a 6+ cover save.
+Given by ruins and trenches.
+
+^^**•**^^ Heavy Cover: It gives the unit a 4+ cover save.
+Given by bunkers and heavily fortified buildings.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile name="Combi Weapon" typeId="8c2e-a4d3-bbd5-5931" typeName="Rule" hidden="false" id="cf7c-848a-4372-ba4d">
+    <profile name="Combi Weapon" typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="cf7c-848a-4372-ba4d">
       <characteristics>
-        <characteristic name="Description" typeId="8d02-580d-42e1-8dfb">A combi weapon has multiple profiles to choose from when attacking with it, normally only one profile can be chosen at any given time. With this special rule both profiles can be used when attacking with it however it does impose a -1 modifier to the hit roll when attacking with this weapon, in addition both profiles may choose different targets.</characteristic>
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db"/>
       </characteristics>
     </profile>
-    <profile name="Inspire" typeId="52eb-5f98-0a80-002c" typeName="Ability" hidden="false" id="3fe0-c43b-ca19-d5fe">
+    <profile name="Inspire" typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="3fe0-c43b-ca19-d5fe">
       <characteristics>
-        <characteristic name="Description" typeId="f0f1-262f-7fa5-e653">^^**[Aura]**^^ Other friendly units within 6” of a unit with this special rule may add +1 to a single die result when making morale tests.</characteristic>
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db">^^**[Aura]**^^ Other friendly units within 6” of a unit with this special rule may add +1 to a single die result when making morale tests.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Command" typeId="52eb-5f98-0a80-002c" typeName="Ability" hidden="false" id="e4ca-82ab-b7d9-f142">
+    <profile name="Command" typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="e4ca-82ab-b7d9-f142">
       <characteristics>
-        <characteristic name="Description" typeId="f0f1-262f-7fa5-e653">When a unit with this special rule activates, it can order another unit within 6&quot; (or in reserves, if both units are in reserves) to activate as part of a shared activation. Both units are treated as one and must be within 2&quot; of each other when entering the battlefield from reserves.
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db">When a unit with this special rule activates, it can order another unit within 6&quot; (or in reserves, if both units are in reserves) to activate as part of a shared activation. Both units are treated as one and must be within 2&quot; of each other when entering the battlefield from reserves.
 If the other unit has the Command special rule, it cannot use it during this shared activation.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Relentless" typeId="52eb-5f98-0a80-002c" typeName="Ability" hidden="false" id="0235-aaf5-490d-9e90">
+    <profile name="Relentless" typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="0235-aaf5-490d-9e90">
       <characteristics>
-        <characteristic name="Description" typeId="f0f1-262f-7fa5-e653">Relentless models can shoot with ranged weapons counting as stationary even if they moved in it&apos;s activation. They are also allowed to charge in the same turn they fire Heavy, Ordnance or Rapid Fire weapons</characteristic>
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db">Relentless models can shoot with ranged weapons counting as stationary even if they moved in it&apos;s activation. They are also allowed to charge in the same turn they fire Heavy, Ordnance or Rapid Fire weapons</characteristic>
       </characteristics>
     </profile>
-    <profile name="Deepstrike " typeId="52eb-5f98-0a80-002c" typeName="Ability" hidden="false" id="89fc-c76f-8e08-7dc9">
+    <profile name="Deepstrike " typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="89fc-c76f-8e08-7dc9">
       <characteristics>
-        <characteristic name="Description" typeId="f0f1-262f-7fa5-e653">When arriving from reserves, this unit doesnt have to be deployed within 6” of a table edge. Place it anywhere where it could stand but still following the other rules for arriving from reserves (9” or 6” away from enemy units).</characteristic>
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db">When arriving from reserves, this unit doesnt have to be deployed within 6” of a table edge. Place it anywhere where it could stand but still following the other rules for arriving from reserves (9” or 6” away from enemy units).</characteristic>
       </characteristics>
+    </profile>
+    <profile name="Invulnerable save" typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="ac81-c2fb-3e64-2a92" noindex="true">
+      <characteristics>
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db">Invulnerable saves are different to armour saves because they may always be taken whenever the model suffers a wound – the Armour Piercing value of attacking weapons has no effect. Even if a wound normally ignores all armour saves, an invulnerable saving throw may still be taken.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Feel no pain" typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="3429-4b4b-2d8c-8d93">
+      <characteristics>
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db">For every point of damage the model with this special rule suffers, it can make a special Feel No Pain roll. Roll a D10 each time a loss of a wound is suffered, if the roll is equal or higher than the number behind the Feel No Pain, then the damage is negated.
+Example: Feel No Pain (8+), means rolling a 8, 9 or 10 is a success and the model does not lose a wound.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Fleshbane" typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="ab3b-7390-7c2e-8dbc">
+      <characteristics>
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db">When a model targets a infantry or monster with a weapon that has this rule, it adds +2 to it&apos;s Strength (S) against that target (to a maximum Strength of 15).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Resilient" typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="fe5b-bdbe-0653-eb99">
+      <characteristics>
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db">Models in this unit take 1 less damage from each attack (minimum 1).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Psyker " typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="b58b-eb9d-5267-7465">
+      <characteristics>
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db">This ability indicates how many psychic powers this unit can attempt to cast during the Psychic phase.
+A model with this ability grants it&apos;s unit the Psyker keyword if it does not already have it</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Preferred Enemy" typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="050a-cc47-af9a-1fc3">
+      <characteristics>
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db">This rule is often presented as Preferred Enemy (X), where X identifies a specific type of foe (or keyword). If the special rule does not specify a type of foe, then all enemies are considered Preferred Enemies of the unit.
+A unit with this special rule re-rolls failed To Hit and To Wound rolls of 1 when attacking it&apos;s Preferred Enemy. This applies to both shooting and close combat attacks.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bodyguard" typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="5eb0-2545-87b9-6dab">
+      <characteristics>
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db">As long as a model with the bodyguard special rule is within 2” and visible to a friendly character (that does not have this special rule), than that character may not be the target of attacks and the bodyguard unit becomes the target instead even if it is out of range or not visible.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Slow and Purposeful" typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="8b02-46ef-c057-b57b">
+      <characteristics>
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db">This unit cannot perform the Run action and has the Relentless special rule</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Fearless" typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="4f29-f45b-6df5-bf0c">
+      <characteristics>
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db">The unit automatically passes any Morale tests and Pinning tests it makes.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mindless" typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="5467-64c7-fc20-6061">
+      <characteristics>
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db">This unit cannot control objectives.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Squadron" typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="cd27-7505-2a4c-74bd">
+      <characteristics>
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db">These units models must be deployed together within 4” of each other but are individual units when it is on the battlefield. This model may also activate in the Advance Phase if a model from the same squadron unit activates within 4” as a shared activation.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Fly" typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="4898-a0fd-22f4-5cdb">
+      <characteristics>
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db">This unit may ignore terrain and may move vertically for free while moving as if it isnt there but may not end it&apos;s movement where it isnt normally allowed. In addition it may choose to ignore intervening units when drawing line of sight.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Hit and run" typeId="746a-4338-5ebe-6106" typeName="Special Rule" hidden="false" id="306c-0fcf-3655-979a">
+      <characteristics>
+        <characteristic name="Description" typeId="e31c-dba6-82c9-32db"/>
+      </characteristics>
+      <alias>Hit &amp; run</alias>
     </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
@@ -607,4 +707,45 @@ target</characteristic>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="RULES" hidden="false" id="e08c-b2b2-86ea-7772" sortIndex="1">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d047-6475-0ab6-a6ea" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="RULES" id="31ed-4dc3-ce1d-5ecc" hidden="false">
+          <description>^^**RULES OF ENGAGEMENT**^^
+^^**ARMY LIMITATIONS**^^
+
+
+Each player will need a patrol that conforms to the rules below:
+^^**•**^^ Armies are no more than 500 points.
+^^**•**^^ You must use the Combat Patrol detachment (see below).
+^^**•**^^ Unique special characters are not allowed.
+^^**•**^^ Lord of War units are not allowed.
+^^**•**^^ No models with more than 12 wounds.
+^^**•**^^ No ordnance type weapons.
+^^**•**^^ Any single model may not cost more than 180 total points.
+^^**•**^^ You may spend remaining points from anywhere in the codex.
+^^**•**^^ Units must be fielded with the fewest models possible it can have. Example: a unit of tactical marines can have a total of 5-10 models, so it can only be fielded with 5 models. Units that can have models &quot;added&quot; to it, like an Ork Nob or the Tau gun drones are still allowed to be added to a unit.
+
+
+^^**MISSIONS**^^
+
+
+Play any mission you want, when playing with objectives, no more
+than 3 objectives are used in a Combat patrol game.
+Missions are played on a smaller table, 30&quot; by 48&quot;.
+COMBAT PATROL DETACHMENT
+^^**•**^^ HQ 0-1
+^^**•**^^ TROOPS 1-4
+^^**•**^^ ELITES 0-2
+^^**•**^^ FAST ATTACK 0-2
+^^**•**^^ HEAVY SUPPORT 0-2
+^^**•**^^ FLYERS 0-2
+-------------------------------------------------------------------------</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+  </selectionEntries>
 </gameSystem>

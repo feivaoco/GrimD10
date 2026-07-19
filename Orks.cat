@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6eb0-53ec-51ac-9c63" name="Orks" gameSystemId="sys-194e-147b-30e0-deb5" gameSystemRevision="1" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6eb0-53ec-51ac-9c63" name="Orks" gameSystemId="sys-194e-147b-30e0-deb5" gameSystemRevision="1" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Slugga" hidden="false" id="f129-dca0-a638-6d57">
       <profiles>
@@ -345,17 +345,13 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cybork body" hidden="false" id="0f19-c763-9e55-82e4">
       <infoLinks>
-        <infoLink name="Feel no Pain" id="11ed-86af-50f1-b0bf" hidden="false" type="rule" targetId="7021-c225-c1f9-3ea6"/>
+        <infoLink name="Feel no pain" id="11ed-86af-50f1-b0bf" hidden="false" type="rule" targetId="acf9-95a4-812d-7a29"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Gear" hidden="false" id="5a5e-14f2-a01e-1217" targetId="5fd4-033f-3535-2b2b" primary="true"/>
       </categoryLinks>
       <profiles>
-        <profile name="Cybork body" typeId="50ab-0b17-e88f-4ab9" typeName="Gear" hidden="false" id="373a-882e-7b92-54c7">
-          <characteristics>
-            <characteristic name="Description" typeId="0dfb-289c-ce0b-ead7">A model with a Cybork body has the **^^Feel no Pain (8+)^^** special rule</characteristic>
-          </characteristics>
-        </profile>
+        <profile name="Cybork body" typeId="9a4c-9cfd-1cac-e423" typeName="Wargear" hidden="false" id="373a-882e-7b92-54c7"/>
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="’Eavy armour" hidden="false" id="8904-d23a-f03c-0fad">
@@ -1057,6 +1053,7 @@ may be a friendly target. Use the Da Krunch weapon profile</characteristic>
             <profile name="Kommando" typeId="9c18-b709-d7ed-8583" typeName="Type" hidden="false" id="384c-51dc-aae3-6319">
               <characteristics>
                 <characteristic name="Unit" typeId="9cd3-7e0c-cabf-da44">Infantry</characteristic>
+                <characteristic name="Size" typeId="e196-e291-1dec-e4bf"/>
                 <characteristic name="Height" typeId="3b23-9730-50fc-2a03">2</characteristic>
                 <characteristic name="Base" typeId="527e-9115-0578-cd4d">32mm</characteristic>
               </characteristics>
@@ -1190,6 +1187,7 @@ may be a friendly target. Use the Da Krunch weapon profile</characteristic>
             <profile name="Boss Nob" typeId="9c18-b709-d7ed-8583" typeName="Type" hidden="false" id="462f-e821-aa79-c916">
               <characteristics>
                 <characteristic name="Unit" typeId="9cd3-7e0c-cabf-da44">Infantry</characteristic>
+                <characteristic name="Size" typeId="e196-e291-1dec-e4bf"/>
                 <characteristic name="Height" typeId="3b23-9730-50fc-2a03">2</characteristic>
                 <characteristic name="Base" typeId="527e-9115-0578-cd4d">40mm</characteristic>
               </characteristics>
@@ -1246,6 +1244,7 @@ may be a friendly target. Use the Da Krunch weapon profile</characteristic>
             <profile name="Kommando" typeId="9c18-b709-d7ed-8583" typeName="Type" hidden="false" id="6b7b-1f48-4eea-bb17">
               <characteristics>
                 <characteristic name="Unit" typeId="9cd3-7e0c-cabf-da44">Infantry</characteristic>
+                <characteristic name="Size" typeId="e196-e291-1dec-e4bf"/>
                 <characteristic name="Height" typeId="3b23-9730-50fc-2a03">2</characteristic>
                 <characteristic name="Base" typeId="527e-9115-0578-cd4d">32mm</characteristic>
               </characteristics>
@@ -2325,7 +2324,7 @@ may be a friendly target. Use the Da Krunch weapon profile</characteristic>
         <categoryLink targetId="6530-d88d-6192-ea30" id="7696-898d-9323-0cdd" primary="true" name="HQ"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Breaking’ heads" id="9656-073a-d8bd-5496" hidden="false" type="profile" targetId="75b1-5773-d97b-d2d3"/>
+        <infoLink name="Breaking’ heads" id="9656-073a-d8bd-5496" hidden="false" type="rule" targetId="d8ea-4624-f501-ca14"/>
         <infoLink name="Command" id="89d7-bbb4-ecd5-f5a4" hidden="false" type="profile" targetId="187e-1187-2836-54b7"/>
         <infoLink name="Da Warboss" id="cee2-40d5-21cd-c7e0" hidden="false" type="profile" targetId="5caa-297b-f805-cd2c"/>
         <infoLink name="Dakka dakka" id="2226-c28e-ae94-7944" hidden="false" type="profile" targetId="84bf-05ea-d0f4-ae4a"/>
@@ -2582,6 +2581,9 @@ its damage is changed to 6, for this attack sequence.</description>
     <rule name="Da Warboss" id="bdd3-8a9d-f295-4c25" hidden="false">
       <description>^^**[Command ability]**^^ Target one friendly infantry or cavalry unit within 6”, that unit either gains the Furious charge special rule OR gains the Twin linked special rule on all its ranged weapons, until the end phase.</description>
     </rule>
+    <rule name="Cybork body" id="241b-22ac-1a81-08e7" hidden="false">
+      <description>A model with a Cybork body has the **^^Feel no Pain (8+)^^** special rule</description>
+    </rule>
   </sharedRules>
   <categoryEntries>
     <categoryEntry name="Kommando" id="18df-9744-23eb-2c60" hidden="false">
@@ -2593,11 +2595,6 @@ its damage is changed to 6, for this attack sequence.</description>
     <categoryEntry name="Boy" id="a5d2-9ab9-eca4-df43" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
-    <profile name="Breaking’ heads" typeId="52eb-5f98-0a80-002c" typeName="Ability" hidden="false" id="75b1-5773-d97b-d2d3">
-      <characteristics>
-        <characteristic name="Description" typeId="f0f1-262f-7fa5-e653">^^**[Aura]**^^ if a friendly unit within 6” fails a morale test, this unit may deal 1d3 lethal wounds to that unit but the Morale test is then considered to have been succesfull.</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Command" typeId="52eb-5f98-0a80-002c" typeName="Ability" hidden="false" id="187e-1187-2836-54b7">
       <characteristics>
         <characteristic name="Description" typeId="f0f1-262f-7fa5-e653">When a unit with this special rule activates, it can order another unit within 6&quot; (or in reserves, if both units are in reserves) to activate as part of a shared activation. Both units are treated as one and must be within 2&quot; of each other when entering the battlefield from reserves.
@@ -2609,11 +2606,7 @@ If the other unit has the Command special rule, it cannot use it during this sha
         <characteristic name="Description" typeId="f0f1-262f-7fa5-e653">^^**[Command ability]**^^ Target one friendly infantry or cavalry unit within 6”, that unit either gains the Furious charge special rule OR gains the Twin linked special rule on all its ranged weapons, until the end phase.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Dakka dakka" typeId="52eb-5f98-0a80-002c" typeName="Ability" hidden="false" id="84bf-05ea-d0f4-ae4a">
-      <characteristics>
-        <characteristic name="Description" typeId="f0f1-262f-7fa5-e653">For each unmodified ranged weapon hit roll result of 10, the attack scores one additional successful hit.</characteristic>
-      </characteristics>
-    </profile>
+    <profile name="Dakka dakka" typeId="746a-4338-5ebe-6106" typeName="AAAA" hidden="false" id="84bf-05ea-d0f4-ae4a"/>
     <profile name="Ere we go" typeId="52eb-5f98-0a80-002c" typeName="Ability" hidden="false" id="706f-e053-5185-f11c">
       <characteristics>
         <characteristic name="Description" typeId="f0f1-262f-7fa5-e653">A unit with this ability may re-roll the charge roll die results of 1</characteristic>
@@ -2634,6 +2627,7 @@ If the other unit has the Command special rule, it cannot use it during this sha
         <characteristic name="Description" typeId="f0f1-262f-7fa5-e653">This unit doesn&apos;t have to spend it&apos;s activation token to fire Overwatch when itself is targeted by a charge. This means that this unit can fire overwatch multiple times a round.</characteristic>
       </characteristics>
     </profile>
+    <profile name="New Profile" typeId="746a-4338-5ebe-6106" typeName="AAAA" hidden="false" id="d83a-e77c-dd2d-a9ef"/>
   </sharedProfiles>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Ammo runt" id="66b0-22a0-9288-b14e" hidden="false">

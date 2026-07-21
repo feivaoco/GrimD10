@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-194e-147b-30e0-deb5" name="GrimD10" battleScribeVersion="2.03" revision="8" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-194e-147b-30e0-deb5" name="GrimD10" battleScribeVersion="2.03" revision="10" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="ELITE" id="fd83-733a-738f-6f2d" hidden="false"/>
     <categoryEntry name="FAST ATTACK" id="48dd-53b7-ec44-106f" hidden="false"/>
@@ -7,52 +7,9 @@
     <categoryEntry name="HEAVY SUPPORT" id="5427-040b-966a-d930" hidden="false"/>
     <categoryEntry name="HQ" id="6530-d88d-6192-ea30" hidden="false"/>
     <categoryEntry name="TROOP" id="6a8b-85e3-4669-ba73" hidden="false"/>
-    <categoryEntry name="Assault Weapon" id="b837-5962-01dd-bc9d" hidden="false">
-      <infoLinks>
-        <infoLink name="Assault " id="ea53-2766-201f-8dc8" hidden="false" type="rule" targetId="8f3d-b629-39b5-9e82"/>
-      </infoLinks>
+    <categoryEntry name="Command Ability" id="f37f-74ac-3dcb-0b3c" hidden="false">
+      <comment>NO LO BORRES. HACE QUE NO LINKEE CON EL COMMAND LA PALABRA</comment>
     </categoryEntry>
-    <categoryEntry name="Pistol Weapon" id="b740-3907-bce9-7c36" hidden="false">
-      <infoLinks>
-        <infoLink name="Pistol" id="c048-8945-4f88-0940" hidden="false" type="rule" targetId="c8ab-f877-8f7d-9558"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Close Combat Weapon" id="c67f-46af-a8c9-6697" hidden="false">
-      <infoLinks>
-        <infoLink name="CCW" id="14b5-794e-e313-c4d0" hidden="false" type="rule" targetId="f7cf-f5b7-10ae-62d4"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Grenade Weapon" id="aea3-bbfa-fbca-3082" hidden="false">
-      <infoLinks>
-        <infoLink name="Grenade" id="f498-09c8-ec9a-ba4e" hidden="false" type="rule" targetId="e1a3-11ca-3390-25ad"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Heavy Weapon" id="3114-cd18-b877-89fc" hidden="false">
-      <infoLinks>
-        <infoLink name="Heavy" id="c5a6-7310-eddb-3fd2" hidden="false" type="rule" targetId="3a3e-033e-4754-9220"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Ordnance Weapon" id="2bc6-525d-667f-f582" hidden="false">
-      <infoLinks>
-        <infoLink name="ORDNANCE" id="3678-05bc-acd3-d0e2" hidden="false" type="rule" targetId="9451-c580-c4e1-3812"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Rapid Fire Weapon" id="462e-cf5d-38bb-d521" hidden="false">
-      <infoLinks>
-        <infoLink name="Rapid Fire" id="37e0-f162-39ff-db43" hidden="false" type="rule" targetId="4a0c-3b1c-663a-0ed6"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Template Weapon" id="5915-89b1-d894-66d6" hidden="false">
-      <infoLinks>
-        <infoLink name="Template" id="98a0-84e3-609f-759a" hidden="false" type="rule" targetId="4fd2-9622-10cc-2a8e"/>
-      </infoLinks>
-    </categoryEntry>
-    <categoryEntry name="Gear" id="5fd4-033f-3535-2b2b" hidden="false"/>
-    <categoryEntry name="Command Ability" id="f37f-74ac-3dcb-0b3c" hidden="false"/>
-    <categoryEntry name="Psychic Power" id="f86b-635a-316a-77ad" hidden="false"/>
-    <categoryEntry name="Ranged Weapon" id="c75a-3fb1-8190-1149" hidden="false"/>
-    <categoryEntry name="Melee Weapon" id="4e30-57f3-6981-437f" hidden="false"/>
-    <categoryEntry name="GrimD10Rules" id="77fd-3f4f-8956-644d" hidden="false"/>
     <categoryEntry name="Character" id="d6b9-4816-b50a-3bb5" hidden="false"/>
     <categoryEntry name="Chaos space marine" id="c671-0620-a875-d494" hidden="false"/>
     <categoryEntry name="Chaos" id="2714-aabf-be51-85d0" hidden="false"/>
@@ -65,7 +22,6 @@
   <forceEntries>
     <forceEntry name="Combat Patrol" id="8ebe-a36a-960c-732f" hidden="false">
       <categoryLinks>
-        <categoryLink name="GrimD10Rules" hidden="false" id="aa3f-e4cc-098c-cbf5" targetId="77fd-3f4f-8956-644d"/>
         <categoryLink name="HQ" hidden="false" id="5bfd-cd5b-a7e5-6dc8" targetId="6530-d88d-6192-ea30">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="73f7-59a8-d9de-37e5"/>
@@ -702,9 +658,6 @@ target</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <categoryLinks>
-        <categoryLink name="Psychic Power" hidden="false" id="e95b-1a90-e3c8-32cc" targetId="f86b-635a-316a-77ad" primary="false"/>
-      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <selectionEntries>
@@ -714,10 +667,10 @@ target</characteristic>
       </constraints>
       <rules>
         <rule name="RULES" id="31ed-4dc3-ce1d-5ecc" hidden="false">
-          <description>^^**RULES OF ENGAGEMENT**^^
+          <description>.
+^^**RULES OF ENGAGEMENT**^^
+
 ^^**ARMY LIMITATIONS**^^
-
-
 Each player will need a patrol that conforms to the rules below:
 ^^**•**^^ Armies are no more than 500 points.
 ^^**•**^^ You must use the Combat Patrol detachment (see below).
@@ -729,21 +682,20 @@ Each player will need a patrol that conforms to the rules below:
 ^^**•**^^ You may spend remaining points from anywhere in the codex.
 ^^**•**^^ Units must be fielded with the fewest models possible it can have. Example: a unit of tactical marines can have a total of 5-10 models, so it can only be fielded with 5 models. Units that can have models &quot;added&quot; to it, like an Ork Nob or the Tau gun drones are still allowed to be added to a unit.
 
-
 ^^**MISSIONS**^^
-
-
 Play any mission you want, when playing with objectives, no more
 than 3 objectives are used in a Combat patrol game.
 Missions are played on a smaller table, 30&quot; by 48&quot;.
-COMBAT PATROL DETACHMENT
+
+^^**COMBAT PATROL DETACHMENT**^^
 ^^**•**^^ HQ 0-1
 ^^**•**^^ TROOPS 1-4
 ^^**•**^^ ELITES 0-2
 ^^**•**^^ FAST ATTACK 0-2
 ^^**•**^^ HEAVY SUPPORT 0-2
 ^^**•**^^ FLYERS 0-2
--------------------------------------------------------------------------</description>
+
+</description>
         </rule>
       </rules>
     </selectionEntry>

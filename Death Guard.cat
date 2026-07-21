@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="138f-08bf-a448-161b" name="Death Guard" gameSystemId="sys-194e-147b-30e0-deb5" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="138f-08bf-a448-161b" name="Death Guard" gameSystemId="sys-194e-147b-30e0-deb5" gameSystemRevision="1" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Death Guard Lord" hidden="false" id="56de-2f31-1595-32d2">
       <profiles>
@@ -244,10 +244,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <categoryLinks>
-        <categoryLink targetId="c75a-3fb1-8190-1149" id="16f1-cf8a-41fa-de3a" primary="true" name="Ranged Weapon"/>
-        <categoryLink targetId="462e-cf5d-38bb-d521" id="1110-3885-82bb-0f75" primary="false" name="Rapid Fire Weapon"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="679c-65dd-38ac-0826">
       <profiles>
@@ -262,10 +258,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <categoryLinks>
-        <categoryLink name="Ranged Weapon" hidden="false" id="52a9-0431-795e-151b" targetId="c75a-3fb1-8190-1149" primary="true"/>
-        <categoryLink targetId="b740-3907-bce9-7c36" id="6603-d2c3-9e0a-8e07" primary="false" name="Pistol Weapon"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Combi-flamer" hidden="false" id="aa2d-a1d5-331e-c4b8">
       <profiles>
@@ -300,18 +292,11 @@
           </constraints>
         </entryLink>
       </entryLinks>
-      <categoryLinks>
-        <categoryLink targetId="c75a-3fb1-8190-1149" id="39e1-1c8b-e8e9-e2f7" primary="true" name="Ranged Weapon"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="Combi Weapon" id="6cb3-a003-dc9a-1e40" hidden="false" type="rule" targetId="02e8-d789-3a6b-592b"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="8539-e957-6812-78db">
-      <categoryLinks>
-        <categoryLink targetId="c75a-3fb1-8190-1149" id="1811-c864-6405-4dbd" primary="true" name="Ranged Weapon"/>
-        <categoryLink targetId="5915-89b1-d894-66d6" id="589a-d096-4b62-fc40" primary="false" name="Template Weapon"/>
-      </categoryLinks>
       <profiles>
         <profile name="Flamer" typeId="bf64-a724-59e3-0427" typeName="Weapon" hidden="false" id="ad74-cdc9-662a-6303">
           <characteristics>
@@ -383,10 +368,6 @@
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="b3ab-252d-4042-c28b">
-      <categoryLinks>
-        <categoryLink targetId="b837-5962-01dd-bc9d" id="164b-11b6-399f-3d1b" primary="false" name="Assault Weapon"/>
-        <categoryLink targetId="c75a-3fb1-8190-1149" id="8f3d-3ddd-25d0-7140" primary="true" name="Ranged Weapon"/>
-      </categoryLinks>
       <profiles>
         <profile name="Meltagun" typeId="bf64-a724-59e3-0427" typeName="Weapon" hidden="false" id="86ee-2278-560d-57b5">
           <characteristics>
@@ -404,10 +385,6 @@
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma gun" hidden="false" id="a53f-b3f3-8f7f-dd37">
-      <categoryLinks>
-        <categoryLink targetId="462e-cf5d-38bb-d521" id="b998-46f1-4614-8809" primary="false" name="Rapid Fire Weapon"/>
-        <categoryLink targetId="c75a-3fb1-8190-1149" id="b4dd-f166-5d86-7010" primary="true" name="Ranged Weapon"/>
-      </categoryLinks>
       <profiles>
         <profile name="Plasma gun" typeId="bf64-a724-59e3-0427" typeName="Weapon" hidden="false" id="5d5e-cb8b-5b2e-9561">
           <characteristics>
@@ -513,10 +490,6 @@
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plasma pistol" hidden="false" id="227c-2dbb-1b1f-5c0f">
-      <categoryLinks>
-        <categoryLink targetId="c75a-3fb1-8190-1149" id="b109-8d35-b3a0-864c" primary="true" name="Ranged Weapon"/>
-        <categoryLink targetId="b740-3907-bce9-7c36" id="deae-35b6-d71f-64fd" primary="false" name="Pistol Weapon"/>
-      </categoryLinks>
       <profiles>
         <profile name="Plasma pistol" typeId="bf64-a724-59e3-0427" typeName="Weapon" hidden="false" id="6f89-f8a9-1835-ef74">
           <characteristics>
@@ -534,10 +507,6 @@
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Krak grenades" hidden="false" id="4cf2-a40e-0762-0390">
-      <categoryLinks>
-        <categoryLink targetId="aea3-bbfa-fbca-3082" id="d5c9-4d3f-3835-839f" primary="false" name="Grenade Weapon"/>
-        <categoryLink targetId="c75a-3fb1-8190-1149" id="378f-2a23-c99a-6788" primary="true" name="Ranged Weapon"/>
-      </categoryLinks>
       <profiles>
         <profile name="Krak grenades" typeId="bf64-a724-59e3-0427" typeName="Weapon" hidden="false" id="3ac8-5be3-a6ef-ef8b">
           <characteristics>
@@ -555,10 +524,6 @@
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Blight grenade" hidden="false" id="38eb-c644-7fe2-8e4f">
-      <categoryLinks>
-        <categoryLink targetId="c75a-3fb1-8190-1149" id="ad82-202d-48f3-777a" primary="true" name="Ranged Weapon"/>
-        <categoryLink targetId="aea3-bbfa-fbca-3082" id="d303-e908-8a7a-98d6" primary="false" name="Grenade Weapon"/>
-      </categoryLinks>
       <profiles>
         <profile name="Blight grenade" typeId="bf64-a724-59e3-0427" typeName="Weapon" hidden="false" id="ce32-95d0-9533-0d32">
           <characteristics>
@@ -578,10 +543,6 @@
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plague knife" hidden="false" id="efa9-3bf6-7d27-46a9">
-      <categoryLinks>
-        <categoryLink targetId="4e30-57f3-6981-437f" id="2c53-d948-cf56-1c0e" primary="false" name="Melee Weapon"/>
-        <categoryLink targetId="c67f-46af-a8c9-6697" id="8fa8-82f5-d09b-b897" primary="true" name="Close Combat Weapon"/>
-      </categoryLinks>
       <profiles>
         <profile name="Plague knife" typeId="bf64-a724-59e3-0427" typeName="Weapon" hidden="false" id="ce5d-39e8-3167-71f8">
           <characteristics>
@@ -611,19 +572,11 @@
           </characteristics>
         </profile>
       </profiles>
-      <categoryLinks>
-        <categoryLink targetId="4e30-57f3-6981-437f" id="ffab-0a10-6c71-b4f6" primary="false" name="Melee Weapon"/>
-        <categoryLink targetId="c67f-46af-a8c9-6697" id="1399-d030-0fc9-bc28" primary="true" name="Close Combat Weapon"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink name="Plague" id="5ff3-1ecd-6f78-6975" hidden="false" type="rule" targetId="8d83-7e01-2cdc-dafb"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Flail of corruption " hidden="false" id="3044-c13f-348d-4b57">
-      <categoryLinks>
-        <categoryLink targetId="4e30-57f3-6981-437f" id="6884-5312-541c-1738" primary="false" name="Melee Weapon"/>
-        <categoryLink targetId="c67f-46af-a8c9-6697" id="6035-a94a-d2d2-706b" primary="true" name="Close Combat Weapon"/>
-      </categoryLinks>
       <profiles>
         <profile name="Flail of corruption " typeId="bf64-a724-59e3-0427" typeName="Weapon" hidden="false" id="730d-f837-98ec-4a51">
           <characteristics>
@@ -660,15 +613,12 @@
       </profiles>
       <infoLinks>
         <infoLink name="Plague" id="e27d-6ec2-c018-ee46" hidden="false" type="rule" targetId="8d83-7e01-2cdc-dafb"/>
-        <infoLink name="Attack " id="4788-82a7-8aaf-ace3" hidden="false" type="rule" targetId="1a70-5a75-743e-e0e9">
+        <infoLink name="Attack" id="4788-82a7-8aaf-ace3" hidden="false" type="rule" targetId="1a70-5a75-743e-e0e9">
           <modifiers>
             <modifier type="set" value="+1" field="annotation"/>
           </modifiers>
         </infoLink>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="c67f-46af-a8c9-6697" id="c833-1365-ae06-c320" primary="true" name="Close Combat Weapon"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mace of contagion" hidden="false" id="f11c-aeb5-aa50-507b">
       <profiles>
@@ -687,9 +637,6 @@
         <infoLink name="Plague" id="d453-eec5-517d-a88f" hidden="false" type="rule" targetId="8d83-7e01-2cdc-dafb"/>
         <infoLink name="Unwieldy" id="251e-72c2-2cf6-1300" hidden="false" type="rule" targetId="e44a-ea91-0451-af49"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="c67f-46af-a8c9-6697" id="66d5-3ca0-e6fc-c221" primary="true" name="Close Combat Weapon"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Manreaper" hidden="false" id="85b9-c9fe-e6dc-7dee">
       <profiles>
@@ -709,9 +656,6 @@
         <infoLink name="Blast" id="688e-5ffd-5fae-df39" hidden="false" type="rule" targetId="e063-7035-8cf0-e261"/>
         <infoLink name="Plague" id="5077-de9e-2c52-e55a" hidden="false" type="rule" targetId="8d83-7e01-2cdc-dafb"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="c67f-46af-a8c9-6697" id="8e04-e36c-c5fd-2cf0" primary="true" name="Close Combat Weapon"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plague claw" hidden="false" id="b1bf-5e48-8fbb-52ae">
       <profiles>
@@ -730,9 +674,6 @@
         <infoLink name="Unwieldy" id="75cf-f0ce-be60-55f4" hidden="false" type="rule" targetId="e44a-ea91-0451-af49"/>
         <infoLink name="Plague" id="efdc-f7c2-1a21-4a45" hidden="false" type="rule" targetId="8d83-7e01-2cdc-dafb"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="c67f-46af-a8c9-6697" id="1f7f-a658-5e45-566a" primary="true" name="Close Combat Weapon"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plaguesword" hidden="false" id="44a2-8af3-04ec-b2e4">
       <profiles>
@@ -748,16 +689,13 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Attack " id="6138-cf31-cdf3-61fe" hidden="false" type="rule" targetId="1a70-5a75-743e-e0e9">
+        <infoLink name="Attack" id="6138-cf31-cdf3-61fe" hidden="false" type="rule" targetId="1a70-5a75-743e-e0e9">
           <modifiers>
             <modifier type="set" value="+1" field="annotation"/>
           </modifiers>
         </infoLink>
         <infoLink name="Plague" id="63a7-58cf-8ca9-a81e" hidden="false" type="rule" targetId="8d83-7e01-2cdc-dafb"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="c67f-46af-a8c9-6697" id="ae18-a93b-9f2f-278a" primary="true" name="Close Combat Weapon"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="60a3-2834-89a2-2058">
       <profiles>
@@ -775,9 +713,6 @@
       <infoLinks>
         <infoLink name="Unwieldy" id="2850-42a5-37f1-7892" hidden="false" type="rule" targetId="e44a-ea91-0451-af49"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="c67f-46af-a8c9-6697" id="7eb7-086e-9f08-197a" primary="true" name="Close Combat Weapon"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="d268-c982-2319-79e9">
       <profiles>
@@ -792,10 +727,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <categoryLinks>
-        <categoryLink targetId="4e30-57f3-6981-437f" id="b74a-f56a-70d4-5876" primary="false" name="Melee Weapon"/>
-        <categoryLink targetId="c67f-46af-a8c9-6697" id="3484-9397-ba7d-95a4" primary="true" name="Close Combat Weapon"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sigil of Corruption" hidden="false" id="34be-e3c7-d475-26fc">
       <profiles>
@@ -916,6 +847,11 @@
       </profiles>
       <categoryLinks>
         <categoryLink targetId="fd83-733a-738f-6f2d" id="b030-7954-937e-f2d5" primary="true" name="ELITE"/>
+        <categoryLink targetId="c671-0620-a875-d494" id="6fe4-bfbb-99ed-bd1d" primary="false" name="Chaos space marine"/>
+        <categoryLink targetId="2714-aabf-be51-85d0" id="4204-d180-ef29-0317" primary="false" name="Chaos"/>
+        <categoryLink targetId="cb97-fac1-7b63-ef84" id="bf68-9347-6536-97ae" primary="false" name="Death guard"/>
+        <categoryLink targetId="c6f8-5fb3-9f0c-a77e" id="9eca-fad1-af53-9402" primary="false" name="Nurgle"/>
+        <categoryLink targetId="d6b9-4816-b50a-3bb5" id="54c3-46e5-5ec1-a88d" primary="false" name="Character"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="6aa7-e84e-fbb5-e70c" value="65"/>
@@ -957,9 +893,6 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d484-402a-0428-dc65" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d163-e32c-5ba5-fe48" includeChildSelections="false"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink targetId="c67f-46af-a8c9-6697" id="5b59-8a46-a897-e2a0" primary="false" name="Close Combat Weapon"/>
-          </categoryLinks>
         </entryLink>
         <entryLink import="true" name="Grenades" hidden="false" id="021a-5145-fcda-1898" type="selectionEntryGroup" targetId="abcf-c766-5d37-f9d4" sortIndex="2"/>
       </entryLinks>
@@ -1015,9 +948,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0fb-6fb3-f9df-8b46" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2886-2496-0f35-5986" includeChildSelections="false"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink targetId="c67f-46af-a8c9-6697" id="535b-5666-17d4-4f7a" primary="false" name="Close Combat Weapon"/>
-          </categoryLinks>
         </entryLink>
         <entryLink import="true" name="Grenades" hidden="false" id="db84-0be2-b115-0f36" type="selectionEntryGroup" targetId="abcf-c766-5d37-f9d4" sortIndex="2"/>
       </entryLinks>
@@ -1040,9 +970,6 @@
         <infoLink name="Plague" id="fcf3-5fda-6c10-be79" hidden="false" type="rule" targetId="8d83-7e01-2cdc-dafb"/>
         <infoLink name="Poison" id="f8ae-cc95-e33f-16d7" hidden="false" type="rule" targetId="fddb-2018-cba1-7d0e"/>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink targetId="5915-89b1-d894-66d6" id="c585-4207-ca94-bc5f" primary="false" name="Template Weapon"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Noxious Blightbringer" hidden="false" id="bb25-8cd3-cd9d-67b1">
       <costs>
@@ -1432,9 +1359,6 @@
       </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Corrupted staff" hidden="false" id="e15c-f80c-5874-1dd9">
-      <categoryLinks>
-        <categoryLink targetId="c67f-46af-a8c9-6697" id="3661-daff-72e8-ea8c" primary="false" name="Close Combat Weapon"/>
-      </categoryLinks>
       <profiles>
         <profile name="Corrupted staff" typeId="bf64-a724-59e3-0427" typeName="Weapon" hidden="false" id="634d-2d0f-3842-01ed">
           <characteristics>
@@ -1817,7 +1741,7 @@
               <modifiers>
                 <modifier type="set" value="10" field="6aa7-e84e-fbb5-e70c">
                   <conditions>
-                    <condition type="atLeast" value="2" field="selections" scope="parent" childId="any" shared="true"/>
+                    <condition type="greaterThan" value="2" field="selections" scope="parent" childId="any" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2236,7 +2160,7 @@
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="41f3-3f93-be21-2fee" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Autogun" id="b4e7-b197-14f7-f99a" hidden="false">
+            <selectionEntryGroup name="Autogun" id="b4e7-b197-14f7-f99a" hidden="false" defaultSelectionEntryId="1324-e6d1-08c7-ef8b">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f256-6bad-da18-43a9" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13ee-4a6a-055a-42e8" includeChildSelections="false"/>
@@ -2360,7 +2284,7 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Attack (+" id="bbea-91a8-d4b8-2eed" hidden="false" type="rule" targetId="1a70-5a75-743e-e0e9">
+        <infoLink name="Attack" id="bbea-91a8-d4b8-2eed" hidden="false" type="rule" targetId="1a70-5a75-743e-e0e9">
           <modifiers>
             <modifier type="set" value="+1" field="annotation"/>
           </modifiers>
@@ -2770,7 +2694,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Plagueburst Crawler" hidden="false" id="293a-2ad1-65bc-1431" sortIndex="">
+    <selectionEntry type="model" import="true" name="Plagueburst Crawler" hidden="false" id="293a-2ad1-65bc-1431">
       <costs>
         <cost name="pts" typeId="6aa7-e84e-fbb5-e70c" value="140"/>
       </costs>
@@ -2834,38 +2758,31 @@
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="2 Plaguespitters" id="4a61-c6e5-ead3-945d" hidden="false" sortIndex="3">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="2 Entropy cannons" id="8569-8ce0-c867-80f6" hidden="false" sortIndex="2">
-              <entryLinks>
-                <entryLink import="true" name="Entropy cannon" hidden="false" id="edb2-bae7-fc14-1b5b" type="selectionEntry" targetId="c7e5-0db0-a233-9049">
-                  <modifiers>
-                    <modifier type="prepend" value="2" field="name" affects="self.entries.recursive.profiles.Weapon" join=" "/>
-                    <modifier type="append" value="s" field="name" affects="self.entries.recursive.profiles.Weapon" join=""/>
-                  </modifiers>
-                  <costs>
-                    <cost name="pts" typeId="6aa7-e84e-fbb5-e70c" value="20"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="2 Plaguespitter" id="3315-b538-8b42-6b6b" hidden="false" sortIndex="1">
-              <entryLinks>
-                <entryLink import="true" name="Plaguespitter" hidden="false" id="fa07-a20e-b653-28fc" type="selectionEntry" targetId="a417-be14-dd3e-645f">
-                  <costs>
-                    <cost name="pts" typeId="6aa7-e84e-fbb5-e70c" value="10"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="append" value="s" field="name" affects="self.entries.recursive.profiles.Weapon" join=""/>
-                    <modifier type="prepend" value="2" field="name" affects="self.entries.recursive.profiles.Weapon" join=" "/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0914-fc8a-f671-1746" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7296-3e05-e0d9-dcd5" includeChildSelections="false"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Plaguespitter" hidden="false" id="4d4a-3a5f-ca10-4996" type="selectionEntry" targetId="a417-be14-dd3e-645f" sortIndex="1" defaultAmount="1">
+              <modifiers>
+                <modifier type="prepend" value="2" field="name" affects="self.entries.recursive.profiles.Weapon"/>
+                <modifier type="append" value="s" field="name" affects="self.entries.recursive.profiles.Weapon" join=""/>
+                <modifier type="append" value="s" field="name" affects="self.entries.recursive" join=""/>
+                <modifier type="prepend" value="2" field="name" affects="self.entries.recursive"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Entropy cannon" hidden="false" id="edb2-bae7-fc14-1b5b" type="selectionEntry" targetId="c7e5-0db0-a233-9049" sortIndex="2">
+              <modifiers>
+                <modifier type="prepend" value="2" field="name" affects="self.entries.recursive"/>
+                <modifier type="append" value="s" field="name" affects="self.entries.recursive.profiles.Weapon" join=""/>
+                <modifier type="append" value="s" field="name" affects="self.entries.recursive" join=""/>
+                <modifier type="prepend" value="2" field="name" affects="self.entries.recursive.profiles.Weapon"/>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="6aa7-e84e-fbb5-e70c" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Wargear" id="0eea-24fd-498f-cb5c" hidden="false">
           <entryLinks>
@@ -2906,6 +2823,10 @@
         <categoryLink targetId="c6f8-5fb3-9f0c-a77e" id="59c9-852d-607e-6e01" primary="false" name="Nurgle"/>
         <categoryLink targetId="b1ec-2c23-1b6a-e9d2" id="bbd5-9aab-f9c7-137f" primary="false" name="Daemon"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1dbc-cb32-e5e5-8daa" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4dd-6143-125c-b9b6" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plagueburst mortar" hidden="false" id="4048-30b3-3da5-eddb">
       <profiles>
@@ -3358,18 +3279,12 @@ This aura is allowed to stack</description>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="769f-463f-f09c-0ca1" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f34b-483d-8ca7-3748" includeChildSelections="false"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink targetId="aea3-bbfa-fbca-3082" id="9fce-0f23-cfdf-2d62" primary="false" name="Grenade Weapon"/>
-          </categoryLinks>
         </entryLink>
         <entryLink import="true" name="Krak grenades" hidden="false" id="2d54-cd30-fe7c-2852" type="selectionEntry" targetId="4cf2-a40e-0762-0390" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe2f-eef5-1a90-c451" includeChildSelections="false"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d173-6a71-8e09-7805" includeChildSelections="false"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink targetId="aea3-bbfa-fbca-3082" id="2c1d-72db-b443-185e" primary="false" name="Grenade Weapon"/>
-          </categoryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>

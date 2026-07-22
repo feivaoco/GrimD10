@@ -30,6 +30,11 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="6530-d88d-6192-ea30" id="6864-5db4-638c-9803" primary="true" name="HQ"/>
+        <categoryLink targetId="d6b9-4816-b50a-3bb5" id="fb8f-4dd5-25a2-38fa" primary="false" name="Character"/>
+        <categoryLink targetId="c671-0620-a875-d494" id="30a4-ba72-a7c0-87a4" primary="false" name="Chaos space marine"/>
+        <categoryLink targetId="2714-aabf-be51-85d0" id="c457-445d-6970-c8c1" primary="false" name="Chaos"/>
+        <categoryLink targetId="cb97-fac1-7b63-ef84" id="798f-bca6-1a1c-fade" primary="false" name="Death guard"/>
+        <categoryLink targetId="c6f8-5fb3-9f0c-a77e" id="4aba-2d28-073e-aec2" primary="false" name="Nurgle"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Bolt pistol" id="a811-dda0-f876-f36c" hidden="false" sortIndex="3" collapsible="true">
@@ -903,6 +908,11 @@
       </costs>
       <categoryLinks>
         <categoryLink targetId="fd83-733a-738f-6f2d" id="db5a-ec5a-2d25-c371" primary="true" name="ELITE"/>
+        <categoryLink targetId="d6b9-4816-b50a-3bb5" id="53fb-aa43-3239-884c" primary="false" name="Character"/>
+        <categoryLink targetId="c671-0620-a875-d494" id="7c29-e496-c42c-7f35" primary="false" name="Chaos space marine"/>
+        <categoryLink targetId="2714-aabf-be51-85d0" id="dcb3-fe36-7551-6a19" primary="false" name="Chaos"/>
+        <categoryLink targetId="cb97-fac1-7b63-ef84" id="70b2-417e-67f2-7b23" primary="false" name="Death guard"/>
+        <categoryLink targetId="c6f8-5fb3-9f0c-a77e" id="aaae-9189-3c17-a9fa" primary="false" name="Nurgle"/>
       </categoryLinks>
       <profiles>
         <profile name="Foul Blightspawn" typeId="f17c-c21c-6636-2f33" typeName="Model" hidden="false" id="0bdd-4057-fc83-4ab5">
@@ -1174,13 +1184,13 @@
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="d8c5-eda3-92f2-15b0" id="04f5-d628-d05d-f792" primary="false" name="Psyker"/>
         <categoryLink targetId="c671-0620-a875-d494" id="29c4-86ca-640f-47a3" primary="false" name="Chaos space marine"/>
         <categoryLink targetId="2714-aabf-be51-85d0" id="c5a2-5398-e533-eee1" primary="false" name="Chaos"/>
         <categoryLink targetId="d6b9-4816-b50a-3bb5" id="0ed8-f2f8-0955-1326" primary="false" name="Character"/>
         <categoryLink targetId="cb97-fac1-7b63-ef84" id="933c-91b9-0e6d-2502" primary="false" name="Death guard"/>
         <categoryLink targetId="c6f8-5fb3-9f0c-a77e" id="c351-c68e-67a8-eab8" primary="false" name="Nurgle"/>
         <categoryLink targetId="6530-d88d-6192-ea30" id="a667-a202-5a29-f8fe" primary="true" name="HQ"/>
+        <categoryLink targetId="d8c5-eda3-92f2-15b0" id="6126-bfea-c1b5-7d2b" primary="false" name="Psyker"/>
       </categoryLinks>
       <profiles>
         <profile name="Malignant Plaguecaster" typeId="f17c-c21c-6636-2f33" typeName="Model" hidden="false" id="d2e4-5c88-f747-c199">
@@ -1421,6 +1431,11 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="fd83-733a-738f-6f2d" id="d295-a583-2531-c666" primary="true" name="ELITE"/>
+        <categoryLink targetId="d6b9-4816-b50a-3bb5" id="fef9-4b83-8a55-b174" primary="false" name="Character"/>
+        <categoryLink targetId="c671-0620-a875-d494" id="eeb4-d519-c811-c3a2" primary="false" name="Chaos space marine"/>
+        <categoryLink targetId="2714-aabf-be51-85d0" id="b7b4-222d-7c30-dce4" primary="false" name="Chaos"/>
+        <categoryLink targetId="cb97-fac1-7b63-ef84" id="9180-2f7b-f512-db57" primary="false" name="Death guard"/>
+        <categoryLink targetId="c6f8-5fb3-9f0c-a77e" id="1ca9-5a92-8343-c959" primary="false" name="Nurgle"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Grenades" hidden="false" id="88b9-ffc9-7d43-e11d" type="selectionEntryGroup" targetId="abcf-c766-5d37-f9d4" sortIndex="1"/>
@@ -1632,6 +1647,10 @@
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="fd83-733a-738f-6f2d" id="9105-53ee-e30f-c18e" primary="true" name="ELITE"/>
+        <categoryLink targetId="cb97-fac1-7b63-ef84" id="e92e-00b4-1b91-07a6" primary="false" name="Death guard"/>
+        <categoryLink targetId="c671-0620-a875-d494" id="4524-6cbe-1b72-7d36" primary="false" name="Chaos space marine"/>
+        <categoryLink targetId="2714-aabf-be51-85d0" id="e351-6e01-5276-c77f" primary="false" name="Chaos"/>
+        <categoryLink targetId="c6f8-5fb3-9f0c-a77e" id="40b8-b825-6322-ee22" primary="false" name="Nurgle"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Deepstrike " id="5f21-7030-256f-5ab3" hidden="false" type="profile" targetId="89fc-c76f-8e08-7dc9"/>
@@ -1829,6 +1848,10 @@
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="fd83-733a-738f-6f2d" id="5cdd-f37c-82a6-6d21" primary="true" name="ELITE"/>
+        <categoryLink targetId="cb97-fac1-7b63-ef84" id="74cf-c000-a77a-9095" primary="false" name="Death guard"/>
+        <categoryLink targetId="c671-0620-a875-d494" id="1464-5976-5944-c3a6" primary="false" name="Chaos space marine"/>
+        <categoryLink targetId="2714-aabf-be51-85d0" id="6e37-31d2-5cca-ef8e" primary="false" name="Chaos"/>
+        <categoryLink targetId="c6f8-5fb3-9f0c-a77e" id="76fd-f376-f4e2-67c7" primary="false" name="Nurgle"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plaguespurt gauntlet" hidden="false" id="5138-d696-9e0a-04c6">
@@ -2045,6 +2068,10 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="6a8b-85e3-4669-ba73" id="13a5-ba11-8825-5af9" primary="true" name="TROOP"/>
+        <categoryLink targetId="c671-0620-a875-d494" id="338f-36d3-5f38-2f49" primary="false" name="Chaos space marine"/>
+        <categoryLink targetId="2714-aabf-be51-85d0" id="96b0-9a1c-df7b-8dd9" primary="false" name="Chaos"/>
+        <categoryLink targetId="cb97-fac1-7b63-ef84" id="4898-fb7e-051f-8581" primary="false" name="Death guard"/>
+        <categoryLink targetId="c6f8-5fb3-9f0c-a77e" id="d1e5-fa03-b0a0-06b7" primary="false" name="Nurgle"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Plague belcher" hidden="false" id="4b14-0352-d8dd-cd1f">
@@ -2064,6 +2091,8 @@
     <selectionEntry type="unit" import="true" name="Cultists of Nurgle" hidden="false" id="4a27-10be-bd05-fc70">
       <categoryLinks>
         <categoryLink targetId="6a8b-85e3-4669-ba73" id="fb25-35ea-1ba5-48ba" primary="true" name="TROOP"/>
+        <categoryLink targetId="2714-aabf-be51-85d0" id="1758-8d74-ca30-d5fc" primary="false" name="Chaos"/>
+        <categoryLink targetId="cb97-fac1-7b63-ef84" id="4fa2-5565-4a68-76e7" primary="false" name="Death guard"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Cultist Champion" hidden="false" id="c715-0440-8e55-b364" sortIndex="1">
@@ -2294,30 +2323,10 @@
     <selectionEntry type="unit" import="true" name="Poxwalkers" hidden="false" id="1eec-073d-4d84-3499">
       <categoryLinks>
         <categoryLink targetId="6a8b-85e3-4669-ba73" id="de34-5b64-247e-0f53" primary="true" name="TROOP"/>
+        <categoryLink targetId="cb97-fac1-7b63-ef84" id="612c-ff2c-4874-b395" primary="false" name="Death guard"/>
+        <categoryLink targetId="2714-aabf-be51-85d0" id="9e0a-2dbc-8b7c-677a" primary="false" name="Chaos"/>
+        <categoryLink targetId="c6f8-5fb3-9f0c-a77e" id="10b3-0239-cfb9-7f9d" primary="false" name="Nurgle"/>
       </categoryLinks>
-      <profiles>
-        <profile name="Poxwalkers" typeId="9c18-b709-d7ed-8583" typeName="Type" hidden="false" id="b459-9a13-f346-45ad">
-          <characteristics>
-            <characteristic name="Unit" typeId="9cd3-7e0c-cabf-da44">Infantry</characteristic>
-            <characteristic name="Size" typeId="e196-e291-1dec-e4bf"/>
-            <characteristic name="Height" typeId="3b23-9730-50fc-2a03"/>
-            <characteristic name="Base" typeId="527e-9115-0578-cd4d">25mm</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Poxwalkers" typeId="f17c-c21c-6636-2f33" typeName="Model" hidden="false" id="2562-af79-543e-a61b">
-          <characteristics>
-            <characteristic name="M" typeId="f2ad-cf28-b385-c52c">5”</characteristic>
-            <characteristic name="WS" typeId="90d1-d4ce-477b-5be5">2</characteristic>
-            <characteristic name="BS" typeId="2630-750e-bbb9-8b19">9+</characteristic>
-            <characteristic name="S" typeId="480f-b3d8-1e7b-7f2a">2</characteristic>
-            <characteristic name="T" typeId="2b08-f6c5-2e9b-ff83">3</characteristic>
-            <characteristic name="W" typeId="b89c-e03e-1fd9-a389">1</characteristic>
-            <characteristic name="A" typeId="a174-fde0-2b73-4201">1</characteristic>
-            <characteristic name="Ld" typeId="eb57-30ae-7327-90a4">9+</characteristic>
-            <characteristic name="Sv" typeId="ae5e-affd-e329-09d3"/>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink name="Fearless" id="f28a-19e7-4679-e93d" hidden="false" type="profile" targetId="4f29-f45b-6df5-bf0c"/>
         <infoLink name="Slow and Purposeful" id="57ea-358f-be93-31a0" hidden="false" type="profile" targetId="8b02-46ef-c057-b57b"/>
@@ -2346,6 +2355,29 @@
           <costs>
             <cost name="pts" typeId="6aa7-e84e-fbb5-e70c" value="4"/>
           </costs>
+          <profiles>
+            <profile name="Poxwalker" typeId="f17c-c21c-6636-2f33" typeName="Model" hidden="false" id="2562-af79-543e-a61b">
+              <characteristics>
+                <characteristic name="M" typeId="f2ad-cf28-b385-c52c">5”</characteristic>
+                <characteristic name="WS" typeId="90d1-d4ce-477b-5be5">2</characteristic>
+                <characteristic name="BS" typeId="2630-750e-bbb9-8b19">9+</characteristic>
+                <characteristic name="S" typeId="480f-b3d8-1e7b-7f2a">2</characteristic>
+                <characteristic name="T" typeId="2b08-f6c5-2e9b-ff83">3</characteristic>
+                <characteristic name="W" typeId="b89c-e03e-1fd9-a389">1</characteristic>
+                <characteristic name="A" typeId="a174-fde0-2b73-4201">1</characteristic>
+                <characteristic name="Ld" typeId="eb57-30ae-7327-90a4">9+</characteristic>
+                <characteristic name="Sv" typeId="ae5e-affd-e329-09d3"/>
+              </characteristics>
+            </profile>
+            <profile name="Poxwalker" typeId="9c18-b709-d7ed-8583" typeName="Type" hidden="false" id="b459-9a13-f346-45ad">
+              <characteristics>
+                <characteristic name="Unit" typeId="9cd3-7e0c-cabf-da44">Infantry</characteristic>
+                <characteristic name="Size" typeId="e196-e291-1dec-e4bf"/>
+                <characteristic name="Height" typeId="3b23-9730-50fc-2a03"/>
+                <characteristic name="Base" typeId="527e-9115-0578-cd4d">25mm</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -2414,6 +2446,12 @@
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="48dd-53b7-ec44-106f" id="2de8-e389-df42-4bf0" primary="true" name="FAST ATTACK"/>
+        <categoryLink targetId="b1ec-2c23-1b6a-e9d2" id="3b42-831d-10a6-db83" primary="false" name="Daemon"/>
+        <categoryLink targetId="9fc2-9b35-3b73-c8f3" id="be80-b6e8-dbdf-4e78" primary="false" name="Walker"/>
+        <categoryLink targetId="c6f8-5fb3-9f0c-a77e" id="8476-a163-dc36-0de2" primary="false" name="Nurgle"/>
+        <categoryLink targetId="c671-0620-a875-d494" id="a2cb-8c98-6af0-bfe5" primary="false" name="Chaos space marine"/>
+        <categoryLink targetId="2714-aabf-be51-85d0" id="0d89-982e-98a7-fc07" primary="false" name="Chaos"/>
+        <categoryLink targetId="cb97-fac1-7b63-ef84" id="3307-b828-f544-e3ce" primary="false" name="Death guard"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Squadron" id="101b-bd7d-ae98-62cd" hidden="false" type="profile" targetId="cd27-7505-2a4c-74bd"/>
